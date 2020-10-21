@@ -5,6 +5,8 @@ $(window).on('load', function () {
     });
 });
 $(document).ready(function () {
+    new WOW().init();
+
     ///////// **Select & date** /////////
     if ($(window).width() > 991) {
         $('select').select2({
@@ -16,8 +18,8 @@ $(document).ready(function () {
         });
     }
     if ($(window).width() <= 991) {
-        $("select").addClass("mobile-select");
-        $("select").wrap('<div class="mobile-select-cont"></div>');
+        $("select:not(.sort-select)").addClass("mobile-select");
+        $("select:not(.sort-select)").wrap('<div class="mobile-select-cont"></div>');
     }
     $('.date input').datepicker({});
 
@@ -50,11 +52,11 @@ $(document).ready(function () {
     }
 
     if ($(window).width() <= 991) {
-        $('.search-head').click(function () {
-            $(".fltrs").slideToggle(500);
-            $(this).toggleClass("active");
+        $('.filter-icon').click(function () {
+            $("aside").toggleClass("active");
         })
     }
+
 });
 
 
