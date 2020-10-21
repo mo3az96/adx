@@ -54,6 +54,7 @@ $(document).ready(function () {
     if ($(window).width() <= 991) {
         $('.filter-icon').click(function () {
             $("aside").toggleClass("active");
+            $("body").toggleClass("overflow");
         })
     }
 

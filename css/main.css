@@ -1666,9 +1666,9 @@ html[dir='rtl'] .page-a.next::after {
   .filter-icon {
     width: 40px;
     height: 40px;
-    color: var(--text-color);
+    color: #fff;
     font-size: 18px;
-    background-color: #f0eff2;
+    background-color: #e51a71;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
