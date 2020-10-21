@@ -1140,6 +1140,10 @@ html[dir='rtl'] .fltr .date::after {
   color: #858585;
 }
 
+html[dir='rtl'] .select2-container .select2-selection .select2-selection__rendered {
+  padding: 0;
+}
+
 .select2-container .select2-selection .select2-selection__arrow {
   position: relative;
   top: auto;
@@ -1455,8 +1459,24 @@ html[dir='rtl'] .arc-head {
           align-items: center;
 }
 
-.order-fltr .sort-select {
-  width: 170px;
+html[dir='ltr'] .order-fltr .sort-select {
+  width: 180px;
+}
+
+@media (max-width: 991px) {
+  html[dir='ltr'] .order-fltr .sort-select {
+    width: auto;
+  }
+}
+
+html[dir='rtl'] .order-fltr .sort-select {
+  width: 220px;
+}
+
+@media (max-width: 991px) {
+  html[dir='rtl'] .order-fltr .sort-select {
+    width: auto;
+  }
 }
 
 .order-fltr .select2-container {
