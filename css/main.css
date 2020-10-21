@@ -673,7 +673,7 @@ header {
 
 @media (max-width: 767px) {
   header {
-    padding: 10px 0;
+    padding: 20px 0;
   }
 }
 
@@ -696,7 +696,7 @@ header {
 
 @media (max-width: 767px) {
   .logo {
-    width: 110px;
+    width: 100px;
   }
 }
 
