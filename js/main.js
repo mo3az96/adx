@@ -105,10 +105,14 @@ $(document).ready(function () {
             },
         },
     });
+    if ($(window).width() <= 991) {
+        $(".pro-tools").unwrap().unwrap()
+    }
+
     //////////** more content **//////////
     $('.more-content').click(function () {
-        $(this).hide();
-        $(this).siblings(".hidden-content").slideDown();
+        $(this).toggleClass("active");
+        $(this).siblings().toggleClass("active");
     })
 
 });
