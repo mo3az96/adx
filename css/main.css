@@ -632,6 +632,7 @@ html[dir='rtl'] .mo-pro .addToFav {
 
 .mo-pro .order-btn:hover, .mo-pro .order-btn:focus {
   background-position: 100%;
+  color: #fff;
 }
 
 .mo-pro .order-btn span {
@@ -2650,6 +2651,7 @@ html[dir='rtl'] .general-flex .info {
 
 .pro-tools .order:hover, .pro-tools .order:focus {
   background-position: 100%;
+  color: #fff;
 }
 
 .pro-tools .order span {
@@ -3030,10 +3032,20 @@ html[dir='rtl'] .sign-input-cont .input-ico ~ .sign-input {
   height: 50px;
   border-radius: 25px;
   margin-top: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .sign-submit:hover, .sign-submit:focus {
   background-position: 100%;
+  color: #fff;
 }
 
 .social-sign {
@@ -3231,6 +3243,79 @@ html[dir='rtl'] .sign-check .custom-check .check-mark {
   font-weight: bold;
   color: var(--sec-color);
   margin: 0 3px;
+}
+
+.welcome-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 100%;
+  max-width: 555px;
+  margin: auto;
+  padding-bottom: 200px;
+}
+
+@media (max-width: 767px) {
+  .welcome-page {
+    padding: 0 15px;
+    padding-bottom: 80px;
+  }
+}
+
+.welcome-page .welcome-bold-title {
+  font-size: 30px;
+  color: var(--text-color);
+  font-weight: bold;
+  margin-top: 18px;
+  margin-bottom: 17px;
+}
+
+.welcome-page .welcome-light-title {
+  font-size: 17px;
+  color: var(--text-color);
+  line-height: 1.353;
+  margin-bottom: 17px;
+}
+
+.welcome-page .welcome-btn {
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--main-color)), color-stop(var(--sec-color)), color-stop(var(--sec-color)), to(var(--main-color)));
+  background-image: linear-gradient(to right, var(--main-color), var(--sec-color), var(--sec-color), var(--main-color));
+  background-size: 200%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  max-width: 420px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  height: 50px;
+  border-radius: 25px;
+  margin-top: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.welcome-page .welcome-btn:hover, .welcome-page .welcome-btn:focus {
+  background-position: 100%;
+  color: #fff;
 }
 
 .footer {
