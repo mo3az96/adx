@@ -2605,8 +2605,11 @@ html[dir='rtl'] .general-flex .info {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 0 15px;
+    padding: 10px 15px;
     z-index: 9;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
   }
 }
 
@@ -2721,7 +2724,7 @@ html[dir='rtl'] .general-flex .info {
 
 @media (max-width: 991px) {
   .pro-tools .addto {
-    margin: 3px 0;
+    margin: 0 0;
   }
 }
 
@@ -2799,6 +2802,9 @@ html[dir='rtl'] .pro-tools .addto.addToFav i {
     border-radius: 50%;
   }
   .pro-tools .addto .text {
+    display: none;
+  }
+  .pro-tools .addto.share {
     display: none;
   }
 }
