@@ -114,7 +114,14 @@ $(document).ready(function () {
         $(this).toggleClass("active");
         $(this).siblings().toggleClass("active");
     })
+    //////////** file **//////////
 
+    $(".acc-file").change(function () {
+        var file = $('.acc-file')[0].files[0]
+        if (file) {
+            $(".file-cont .acc-input").text(file.name)
+        }
+    });
 });
 
 
