@@ -783,6 +783,28 @@ html[dir='rtl'] .mo-pro .addToFav {
   }
 }
 
+.mo-pro.mo-fav-pro .addToFav i.fas {
+  color: var(--sec-color);
+  visibility: visible;
+  opacity: 1;
+}
+
+.mo-pro.mo-fav-pro .addToFav i.far {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.mo-pro.mo-fav-pro .addToFav:hover i.far {
+  color: var(--sec-color);
+  visibility: visible;
+  opacity: 1;
+}
+
+.mo-pro.mo-fav-pro .addToFav:hover i.fas {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .gm-style .gm-style-iw-c {
   border-radius: 0 !important;
   background-color: transparent !important;
@@ -3983,7 +4005,8 @@ html[dir='rtl'] .acc-input-cont .date::after {
   }
 }
 
-.modal-btn {
+.modal-btn,
+.clear-fav {
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4006,13 +4029,15 @@ html[dir='rtl'] .acc-input-cont .date::after {
   transition: all 0.3s ease-in-out;
 }
 
-.modal-btn:hover {
+.modal-btn:hover,
+.clear-fav:hover {
   background-color: var(--sec-color);
   color: #fff;
 }
 
 @media (max-width: 767px) {
-  .modal-btn {
+  .modal-btn,
+  .clear-fav {
     height: 35px;
     padding: 0 15px;
     font-size: 15px;
