@@ -122,6 +122,19 @@ $(document).ready(function () {
             $(".file-cont .acc-input").text(file.name)
         }
     });
+    //////////** modal btn **//////////
+    $('.modal-btn').click(function () {
+        $(".overlay").fadeIn(300);
+        $(".modal-absolute").fadeIn(350);
+        $(".mo-modal").addClass("open");
+        $("body").addClass("overflow");
+    })
+    $('.close-modal,.overlay').click(function () {
+        $(".overlay").fadeOut(350);
+        $(".modal-absolute").fadeOut(300);
+        $(".mo-modal").removeClass("open");
+        $("body").removeClass("overflow");
+    })
 });
 
 
