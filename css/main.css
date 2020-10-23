@@ -4380,7 +4380,7 @@ html[dir='rtl'] .acc-table .tools {
 }
 
 .acc-table .state-cont.inactive {
-  background-color: #fa4242;
+  background-color: #aeaeae;
 }
 
 .acc-table .receipt-cont {
@@ -4691,6 +4691,53 @@ html[dir='rtl'] .bills-table-cont .acc-table .cost {
 .bills-table-cont .acc-table .rece {
   min-width: 100px;
   max-width: 107px;
+}
+
+.users-table-cont .acc-table .stat {
+  min-width: 125px;
+  max-width: 125px;
+}
+
+html[dir='rtl'] .users-table-cont .acc-table .stat {
+  min-width: 152px;
+  max-width: 152px;
+}
+
+html[dir='ltr'] .users-table-cont .acc-table .stat {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+html[dir='rtl'] .users-table-cont .acc-table .stat {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.users-table-cont .acc-table .Uname {
+  min-width: 200px;
+  max-width: 204px;
+}
+
+html[dir='rtl'] .users-table-cont .acc-table .Uname {
+  min-width: 175px;
+  max-width: 204px;
+}
+
+@media (max-width: 767px) {
+  html[dir='rtl'] .users-table-cont .acc-table .Uname {
+    min-width: 200px;
+    max-width: 204px;
+  }
+}
+
+.users-table-cont .acc-table .phone {
+  min-width: 150px;
+  max-width: 156px;
+}
+
+.users-table-cont .acc-table .email {
+  min-width: 240px;
+  max-width: 242px;
 }
 
 .footer {
