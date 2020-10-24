@@ -332,22 +332,11 @@ $(document).ready(function () {
     ///////// **menu** /////////
     if ($(window).width() <= 991) {
         $('.menu-ico').click(function () {
-            $("nav").fadeIn(300);
-            $(".mo-navbar").addClass("nav-in");
+            $("nav").addClass("active");
             $("body").addClass("overflow");
         });
-
-        $('nav').click(function () {
-            $("nav").fadeOut(400);
-            $(".mo-navbar").removeClass("nav-in");
-            $("body").removeClass("overflow");
-        });
-        $('.mo-navbar').click(function (e) {
-            e.stopPropagation();
-        });
         $('.close-menu').click(function () {
-            $("nav").fadeOut(400);
-            $(".mo-navbar").removeClass("nav-in");
+            $("nav").removeClass("active");
             $("body").removeClass("overflow");
         });
     }

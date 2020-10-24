@@ -6514,61 +6514,145 @@ html[dir='rtl'] .social-link:last-of-type {
   }
 }
 
-nav .close-menu {
+.close-menu {
   display: none;
-  position: absolute;
-  top: 25px;
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.3);
 }
 
-html[dir='ltr'] nav .close-menu {
-  right: 25px;
-}
-
-html[dir='rtl'] nav .close-menu {
-  left: 25px;
-}
-
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
   nav {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(38, 34, 82, 0.3);
-    z-index: 9999;
-    display: none;
+    z-index: 9998;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition-delay: .7s;
+            transition-delay: .7s;
+    text-align: center;
+  }
+  nav.active {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+  }
+  nav.active .nav-overlay {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+  }
+  nav.active .nav-overlay::after {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+  }
+  nav.active .nav-overlay::before {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+  }
+  nav.active .close-menu {
+    opacity: 1;
+  }
+  nav.active .mo-navbar {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+    -webkit-transition-delay: .5s;
+            transition-delay: .5s;
   }
   nav .close-menu {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 12;
     display: block;
+    font-size: 30px;
   }
-  nav .mo-navbar {
-    display: block;
-    background-color: #fff;
-    width: 280px;
+  nav .nav-overlay {
     position: absolute;
     top: 0;
     bottom: 0;
-    padding: 80px 25px 40px;
-    right: -400px;
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    z-index: 9998;
     overflow-y: auto;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 32px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav .nav-overlay:after, nav .nav-overlay:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    width: 50vw;
+    z-index: -1;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-transition-delay: .2s;
+            transition-delay: .2s;
+  }
+  nav .nav-overlay::before {
+    right: auto;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition-delay: .2s;
+            transition-delay: .2s;
+  }
+  nav .mo-navbar {
+    display: block;
+    width: 100%;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 0;
+    -webkit-transition-delay: 0ms;
+            transition-delay: 0ms;
+    text-align: center;
   }
   html[dir='ltr'] nav .mo-navbar {
-    left: -400px;
-    right: auto;
+    margin: 0;
   }
-  nav .mo-navbar.nav-in {
-    right: 0;
+  html[dir='rtl'] nav .mo-navbar {
+    margin: 0;
   }
-  html[dir='ltr'] nav .mo-navbar.nav-in {
-    left: 0;
+  html[dir='ltr'] nav .nav-li {
+    margin: 0 0 16px;
   }
-  nav .nav-li {
-    padding: 7px 0;
+  html[dir='rtl'] nav .nav-li {
+    margin: 0 0 16px;
+  }
+  nav .nav-a {
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 500;
   }
 }
 /*# sourceMappingURL=main.css.map */
