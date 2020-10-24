@@ -1671,6 +1671,8 @@ header {
 @media (max-width: 991px) {
   header {
     background-color: #fff;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -5169,6 +5171,21 @@ html[dir='rtl'] .sign-check .custom-check .check-mark {
   .acc-alert {
     font-size: 15px;
     padding: 8px 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 50px;
   }
   .acc-alert i {
     width: 17px;
@@ -6306,14 +6323,14 @@ html[dir='rtl'] .users-table-cont .acc-table .Uname {
   }
 }
 
-.inner-page {
+.inner-page .footer {
   border-top: 1px solid #f2f2f2;
   padding-top: 46px;
   padding-bottom: 45px;
 }
 
 @media (max-width: 1199px) {
-  .inner-page {
+  .inner-page .footer {
     padding-top: 30px;
     padding-bottom: 30px;
   }
