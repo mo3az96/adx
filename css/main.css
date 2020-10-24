@@ -1273,6 +1273,7 @@ html[dir='rtl'] .modal-absolute .close-modal {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 .modal-btns .succes-btn {
@@ -1290,6 +1291,12 @@ html[dir='rtl'] .modal-absolute .close-modal {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .modal-btns .succes-btn {
+    width: 50%;
+  }
 }
 
 .modal-btns .order-list-btn {
@@ -2404,12 +2411,6 @@ html[dir='rtl'] .main .main-text::before {
   }
 }
 
-@media (max-width: 767px) {
-  .feats-sec {
-    margin-top: 50px;
-  }
-}
-
 .feat {
   text-align: center;
   padding: 0 5px;
@@ -2450,12 +2451,6 @@ html[dir='rtl'] .main .main-text::before {
     margin-top: 70px;
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-}
-
-@media (max-width: 767px) {
-  .cats-sec {
-    margin-top: 50px;
   }
 }
 
@@ -2549,12 +2544,6 @@ html[dir='rtl'] .main .main-text::before {
   }
 }
 
-@media (max-width: 767px) {
-  .featured-sec {
-    margin-top: 50px;
-  }
-}
-
 .featured-sec .sec-heads {
   margin-bottom: 0;
 }
@@ -2580,12 +2569,6 @@ html[dir='rtl'] .main .main-text::before {
     margin-top: 70px;
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-}
-
-@media (max-width: 767px) {
-  .nums-sec {
-    margin-top: 50px;
   }
 }
 
@@ -2655,12 +2638,6 @@ html[dir='rtl'] .main .main-text::before {
 @media (max-width: 991px) {
   .offers-sec {
     margin-top: 70px;
-  }
-}
-
-@media (max-width: 767px) {
-  .offers-sec {
-    margin-top: 50px;
   }
 }
 
@@ -2816,12 +2793,6 @@ html[dir='rtl'] .offers-text .hint::after {
     margin-top: 70px;
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-}
-
-@media (max-width: 767px) {
-  .how-sec {
-    margin-top: 50px;
   }
 }
 
@@ -2991,12 +2962,6 @@ html[dir='rtl'] .how-item .how-icon .how-count {
   }
 }
 
-@media (max-width: 767px) {
-  .Partners-sec {
-    margin-top: 50px;
-  }
-}
-
 .Partner {
   padding-bottom: 100%;
   position: relative;
@@ -3047,12 +3012,6 @@ html[dir='rtl'] .how-item .how-icon .how-count {
     margin-top: 70px;
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-}
-
-@media (max-width: 767px) {
-  .testimonials-sec {
-    margin-top: 50px;
   }
 }
 
@@ -6791,9 +6750,10 @@ html[dir='rtl'] .social-link:last-of-type {
     z-index: 12;
     -webkit-transition-delay: 0;
             transition-delay: 0;
-    font-size: 30px;
+    font-size: 24px;
     display: block;
     opacity: 0;
+    color: #fff;
   }
   nav .nav-overlay {
     position: absolute;
@@ -6823,7 +6783,7 @@ html[dir='rtl'] .social-link:last-of-type {
     top: 0;
     bottom: 0;
     right: 0;
-    background: #fff;
+    background: var(--sec-color);
     width: 50vw;
     z-index: -1;
     -webkit-transition: all .5s ease-in-out;
@@ -6870,7 +6830,8 @@ html[dir='rtl'] .social-link:last-of-type {
   }
   nav .nav-a {
     text-transform: capitalize;
-    font-size: 24px;
+    font-size: 22px;
+    color: #fff;
     font-weight: 500;
   }
 }
