@@ -2419,6 +2419,12 @@ html[dir='rtl'] .main .main-text::before {
   }
 }
 
+@media (max-width: 767px) {
+  .feats-sec {
+    margin-top: 140px;
+  }
+}
+
 .feat {
   text-align: center;
   padding: 0 5px;
