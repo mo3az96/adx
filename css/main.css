@@ -6558,6 +6558,8 @@ html[dir='rtl'] .social-link:last-of-type {
   }
   nav.active .close-menu {
     opacity: 1;
+    -webkit-transition-delay: .5s;
+            transition-delay: .5s;
   }
   nav.active .mo-navbar {
     -webkit-transform: none;
@@ -6573,8 +6575,11 @@ html[dir='rtl'] .social-link:last-of-type {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     z-index: 12;
-    display: block;
+    -webkit-transition-delay: 0;
+            transition-delay: 0;
     font-size: 30px;
+    display: block;
+    opacity: 0;
   }
   nav .nav-overlay {
     position: absolute;
