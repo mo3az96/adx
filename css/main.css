@@ -1263,6 +1263,14 @@ html[dir='rtl'] .modal-absolute .close-modal {
   gap: 30px;
 }
 
+@media (max-width: 767px) {
+  .modal-line {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
 .modal-btns {
   display: -webkit-box;
   display: -ms-flexbox;
