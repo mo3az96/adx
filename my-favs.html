@@ -388,7 +388,91 @@
         </div>
     </section>
 
+    <!-- Star Modal -->
+    <div class="overlay"> </div>
+    <div class="modal-absolute order-modal">
+        <div class="mo-modal">
+            <span class="close-modal lnr lnr-cross"></span>
+            <h2 class="modal-head fixall">Add New Order </h2>
+            <form class="modal-form">
+                <div class="acc-input-cont">
+                    <label class="acc-label fixall">
+                        Ad reservation date
+                    </label>
+                    <div class="date">
+                        <input type="text" class="fixall">
+                    </div>
+                </div>
+                <div class="acc-input-cont">
+                    <label class="acc-label fixall">
+                        Add to campaign
+                    </label>
+                    <select class="modal-select">
+                        <option>Choose from previous campaigns</option>
+                        <option value="new">Add new campaign</option>
+                    </select>
+                </div>
+                <div class="order-add-camp">
+                    <h4 class="sec-form-head fixall">
+                        <span>Add new campaign</span>
+                    </h4>
+                    <div class="acc-input-cont">
+                        <label class="acc-label fixall">
+                            Campaign Name
+                        </label>
+                        <input type="text" class="acc-input fixall">
+                    </div>
+                    <div class="modal-line">
+                        <div class="acc-input-cont">
+                            <label class="acc-label fixall">
+                                Starts at
+                            </label>
+                            <div class="date">
+                                <input type="text" class="fixall">
+                            </div>
+                        </div>
+                        <div class="acc-input-cont">
+                            <label class="acc-label fixall">
+                                Ends at
+                            </label>
+                            <div class="date">
+                                <input type="text" class="fixall">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="acc-submit fixall order-sub">
+                    <span class="save-default">Save to orders list</span>
+                    <span class="save-camp"> Save & Add to Campaign</span>
+                </button>
+            </form>
+        </div>
+    </div>
 
+
+    <div class="modal-absolute succes-modal">
+        <div class="mo-modal">
+            <div class="succes-cont">
+                <div class="modal-img">
+                    <img src="images/check.png" class="img-fluid">
+                </div>
+                <h1 class="modal-head fixall">Successfully added</h1>
+                <p class="modal-pargraph fixall">
+                    Your order successfully added to Orders list. Complete your order by going to Orders list
+                </p>
+                <div class="modal-btns">
+                    <a href="orders-list.html" class="order-list-btn fixall succes-btn">
+                        Orders List
+                    </a>
+                    <a href="#!" class="continue fixall succes-btn">
+                        Continue
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Star Modal -->
 
     <!-- Start Footer -->
     <footer>
