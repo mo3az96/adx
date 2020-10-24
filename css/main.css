@@ -5087,10 +5087,61 @@ html[dir='rtl'] .sign-check .custom-check .check-mark {
   }
 }
 
-.acc-list {
+.mobile-list {
   background-color: #fafafa;
   border-radius: 25px;
   padding: 22px 21px 24px;
+}
+
+@media (max-width: 991px) {
+  .mobile-list {
+    padding: 15px 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.mobile-list-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: none;
+}
+
+.mobile-list-btn::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f078";
+  font-size: 14px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .mobile-list-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.mobile-list-btn.active {
+  color: var(--sec-color);
+}
+
+.mobile-list-btn.active::after {
+  color: var(--sec-color);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.acc-list {
+  margin-top: 20px;
 }
 
 @media (max-width: 991px) {

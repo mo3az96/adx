@@ -351,6 +351,13 @@ $(document).ready(function () {
             $("body").removeClass("overflow");
         });
     }
+    ///////// **acc** /////////
+    if ($(window).width() <= 991) {
+        $('.mobile-list-btn').click(function () {
+            $(".acc-list").slideToggle();
+            $(".mobile-list-btn").toggleClass("active");
+        });
+    }
 });
 
 
