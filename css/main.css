@@ -5384,6 +5384,7 @@ html[dir='rtl'] .sign-check .custom-check .check-mark {
   .mobile-list {
     padding: 15px 20px;
     margin-bottom: 40px;
+    background-color: var(--main-color);
   }
 }
 
@@ -5414,6 +5415,7 @@ html[dir='rtl'] .sign-check .custom-check .check-mark {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    color: #fafafa;
   }
 }
 
@@ -5460,6 +5462,12 @@ html[dir='rtl'] .sign-check .custom-check .check-mark {
 
 .acc-list .acc-a:hover, .acc-list .acc-a:focus {
   color: var(--sec-color);
+}
+
+@media (max-width: 991px) {
+  .acc-list .acc-a {
+    color: #fafafa;
+  }
 }
 
 .acc-head {
