@@ -5452,6 +5452,14 @@ html[dir='rtl'] .sign-check .custom-check .check-mark {
   margin-bottom: 0;
 }
 
+@media (max-width: 991px) {
+  .acc-list .acc-li {
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid rgba(242, 242, 242, 0.1);
+  }
+}
+
 .acc-list .acc-a {
   font-size: 17px;
   color: var(--text-color);
