@@ -18,8 +18,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: -webkit-gradient(linear, left bottom, left top, from(var(--main-color)), to(var(--sec-color)));
-  background: linear-gradient(to top, var(--main-color), var(--sec-color));
+  background: var(--sec-color);
   border-radius: 3.5px;
 }
 
@@ -43,8 +42,7 @@ html {
 }
 
 .table-responsive::-webkit-scrollbar-thumb {
-  background: -webkit-gradient(linear, left top, right top, from(var(--main-color)), to(var(--sec-color)));
-  background: linear-gradient(to right, var(--main-color), var(--sec-color));
+  background: var(--sec-color);
   border-radius: 3.5px;
 }
 
@@ -1422,7 +1420,7 @@ html[dir='rtl'] .modal-absolute .close-modal {
 }
 
 .pre-loader .progress-bar {
-  background-color: linear-gradient(to right, var(--main-color), var(--sec-color));
+  background-color: var(--sec-color);
   border: none;
   overflow: hidden;
   width: 100%;
@@ -1445,8 +1443,7 @@ html[dir='rtl'] .modal-absolute .close-modal {
 .pre-loader .progress {
   -webkit-animation: loader 5s ease infinite;
           animation: loader 5s ease infinite;
-  background: -webkit-gradient(linear, left top, right top, from(var(--main-color)), to(var(--sec-color)));
-  background: linear-gradient(to right, var(--main-color), var(--sec-color));
+  background: var(--sec-color);
   border: none;
   padding: 0px;
   width: 0;
@@ -1944,8 +1941,8 @@ header {
 
 header.scroll {
   background-color: #fff;
-  -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
 }
 
 header.scroll .header {
