@@ -259,11 +259,11 @@ a:hover, a:focus {
 }
 
 html[dir='ltr'] .mo-navbar {
-  margin-right: 12px;
+  margin-right: 30px;
 }
 
 html[dir='rtl'] .mo-navbar {
-  margin-left: 12px;
+  margin-left: 30px;
 }
 
 html[dir='ltr'] .nav-li {
@@ -288,6 +288,10 @@ html[dir='rtl'] .nav-li:last-of-type {
   font-weight: 500;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+html[dir='rtl'] .nav-a {
+  font-size: 15px;
 }
 
 .nav-a:hover, .nav-a:focus {
@@ -793,6 +797,10 @@ html[dir='rtl'] .mo-pro .addToFav {
   color: var(--sec-color);
 }
 
+html[dir='rtl'] .mo-pro .mo-pro-name > a {
+  font-size: 15px;
+}
+
 .mo-pro .opts {
   margin-top: 12px;
 }
@@ -806,6 +814,10 @@ html[dir='rtl'] .mo-pro .addToFav {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 5px;
+}
+
+html[dir='rtl'] .mo-pro .opt {
+  font-size: 14px;
 }
 
 .mo-pro .opt i {
@@ -838,7 +850,7 @@ html[dir='rtl'] .mo-pro .addToFav {
 .mo-pro .order-btn {
   background-image: -webkit-gradient(linear, left top, right top, from(var(--main-color)), color-stop(var(--sec-color)), color-stop(var(--sec-color)), to(var(--main-color)));
   background-image: linear-gradient(to right, var(--main-color), var(--sec-color), var(--sec-color), var(--main-color));
-  background-size: 200%;
+  background-size: 150%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 126px;
@@ -867,6 +879,10 @@ html[dir='rtl'] .mo-pro .addToFav {
   text-transform: capitalize;
 }
 
+html[dir='rtl'] .mo-pro .order-btn span {
+  font-size: 14px;
+}
+
 .mo-pro .prices {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -884,11 +900,20 @@ html[dir='rtl'] .mo-pro .addToFav {
   color: var(--sec-color);
 }
 
+html[dir='rtl'] .mo-pro .price {
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
 .mo-pro .old-price {
   font-size: 16px;
   font-weight: 500;
   text-decoration: line-through;
   color: #ababab;
+}
+
+html[dir='rtl'] .mo-pro .old-price {
+  font-size: 14px;
 }
 
 .mo-pro.mo-pro-list {
@@ -1310,7 +1335,7 @@ html[dir='rtl'] .modal-absolute .close-modal {
 .modal-btns .order-list-btn {
   background-image: -webkit-gradient(linear, left top, right top, from(var(--main-color)), color-stop(var(--sec-color)), color-stop(var(--sec-color)), to(var(--main-color)));
   background-image: linear-gradient(to right, var(--main-color), var(--sec-color), var(--sec-color), var(--main-color));
-  background-size: 200%;
+  background-size: 150%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #fff;
@@ -1766,6 +1791,11 @@ html[dir='ltr'] .lang {
   color: var(--sec-color);
 }
 
+html[dir='rtl'] .sign-a {
+  font-size: 15px;
+  padding: 0 20px;
+}
+
 .sign-a .sign-icon {
   display: none;
 }
@@ -1809,7 +1839,7 @@ html[dir='ltr'] .header {
 }
 
 html[dir='rtl'] .header {
-  width: 81%;
+  width: 78%;
 }
 
 @media (max-width: 1199px) {
@@ -1847,8 +1877,8 @@ header {
 @media (max-width: 991px) {
   header {
     background-color: #fff;
-    -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
   }
 }
 
@@ -2108,7 +2138,7 @@ html[dir='rtl'] .main .main-img .video-link > img {
           justify-content: center;
   border-radius: 50%;
   background-color: #fff;
-  padding: 10px;
+  padding-left: 14px;
 }
 
 @media (max-width: 767px) {
@@ -2184,11 +2214,8 @@ html[dir='rtl'] .main .main-img .video-link > img {
             transform: scale(1);
     opacity: 0;
   }
-  10% {
+  50% {
     opacity: 1;
-  }
-  60% {
-    opacity: 0;
   }
   100% {
     -webkit-transform: scale(2);
@@ -2203,11 +2230,8 @@ html[dir='rtl'] .main .main-img .video-link > img {
             transform: scale(1);
     opacity: 0;
   }
-  10% {
+  50% {
     opacity: 1;
-  }
-  60% {
-    opacity: 0;
   }
   100% {
     -webkit-transform: scale(2);
@@ -2243,6 +2267,8 @@ html[dir='ltr'] .main .main-text::after {
 
 html[dir='rtl'] .main .main-text::after {
   left: calc(100% + 80px);
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 @media (max-width: 991px) {
@@ -2263,6 +2289,8 @@ html[dir='ltr'] .main .main-text::before {
 
 html[dir='rtl'] .main .main-text::before {
   left: 100%;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 @media (max-width: 991px) {
@@ -2350,7 +2378,7 @@ html[dir='rtl'] .main .main-text::before {
   border-radius: 30px;
   background-image: -webkit-gradient(linear, left top, right top, from(var(--main-color)), color-stop(var(--sec-color)), color-stop(var(--sec-color)), to(var(--main-color)));
   background-image: linear-gradient(to right, var(--main-color), var(--sec-color), var(--sec-color), var(--main-color));
-  background-size: 200%;
+  background-size: 150%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   display: -webkit-box;
@@ -2365,6 +2393,7 @@ html[dir='rtl'] .main .main-text::before {
   font-size: 22px;
   font-weight: bold;
   color: #fff;
+  padding: 0 0 1px;
 }
 
 .main .main-btn:hover, .main .main-btn:focus {
@@ -2405,6 +2434,7 @@ html[dir='rtl'] .main .main-text::before {
     font-size: 16px;
     margin-top: 15px;
     padding-bottom: 20px;
+    padding-bottom: 0;
   }
 }
 
@@ -2463,8 +2493,8 @@ html[dir='rtl'] .main .main-text::before {
 @media (max-width: 991px) {
   .cats-sec {
     margin-top: 70px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 }
 
@@ -2581,8 +2611,8 @@ html[dir='rtl'] .main .main-text::before {
 @media (max-width: 991px) {
   .nums-sec {
     margin-top: 70px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 }
 
@@ -2644,6 +2674,10 @@ html[dir='rtl'] .main .main-text::before {
   }
 }
 
+html[dir='rtl'] .num .num-name {
+  font-size: 17px;
+}
+
 /*///////////////////////////////////////////////////////*/
 .offers-sec {
   margin-top: 150px;
@@ -2703,6 +2737,10 @@ html[dir='rtl'] .main .main-text::before {
     display: flex;
     margin: 35px auto 0;
   }
+}
+
+html[dir='rtl'] .offers-sec .show-more {
+  font-size: 15px;
 }
 
 .offers-text {
@@ -2805,8 +2843,8 @@ html[dir='rtl'] .offers-text .hint::after {
 @media (max-width: 991px) {
   .how-sec {
     margin-top: 70px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 }
 
@@ -2843,7 +2881,7 @@ html[dir='rtl'] .offers-text .hint::after {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 25px 15px;
+    padding: 35px 20px;
     text-align: justify;
     text-align-last: center;
   }
@@ -2921,12 +2959,22 @@ html[dir='rtl'] .how-item .how-icon .how-count {
   color: #fff;
 }
 
+html[dir='rtl'] .how-item .how-head {
+  font-size: 22px;
+}
+
 .how-item .how-pargraph {
   font-size: 18px;
   font-weight: 300;
   color: #fff;
   margin-top: 13px;
   margin-bottom: 34px;
+}
+
+@media (max-width: 767px) {
+  .how-item .how-pargraph {
+    margin-bottom: 20px;
+  }
 }
 
 .how-item .how-btn {
@@ -2940,7 +2988,6 @@ html[dir='rtl'] .how-item .how-icon .how-count {
   color: #fff;
   font-weight: bold;
   background-color: var(--sec-color);
-  border: 2px solid var(--sec-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2955,14 +3002,17 @@ html[dir='rtl'] .how-item .how-icon .how-count {
 }
 
 .how-item .how-btn:hover, .how-item .how-btn:focus {
-  background-color: transparent;
-  color: #fff;
+  background-color: #f53185;
 }
 
 @media (max-width: 767px) {
   .how-item .how-btn {
     margin: auto;
   }
+}
+
+html[dir='rtl'] .how-item .how-btn {
+  font-size: 15px;
 }
 
 /*///////////////////////////////////////////////////////*/
@@ -3024,8 +3074,8 @@ html[dir='rtl'] .how-item .how-icon .how-count {
 @media (max-width: 991px) {
   .testimonials-sec {
     margin-top: 70px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 }
 
@@ -4573,7 +4623,7 @@ html[dir='rtl'] .general-flex .info {
 .pro-tools .order {
   background-image: -webkit-gradient(linear, left top, right top, from(var(--main-color)), color-stop(var(--sec-color)), color-stop(var(--sec-color)), to(var(--main-color)));
   background-image: linear-gradient(to right, var(--main-color), var(--sec-color), var(--sec-color), var(--main-color));
-  background-size: 200%;
+  background-size: 150%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 100%;
@@ -4963,7 +5013,7 @@ html[dir='rtl'] .sign-input-cont .input-ico ~ .sign-input {
 .sign-submit {
   background-image: -webkit-gradient(linear, left top, right top, from(var(--main-color)), color-stop(var(--sec-color)), color-stop(var(--sec-color)), to(var(--main-color)));
   background-image: linear-gradient(to right, var(--main-color), var(--sec-color), var(--sec-color), var(--main-color));
-  background-size: 200%;
+  background-size: 150%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 100%;
@@ -5232,7 +5282,7 @@ html[dir='rtl'] .sign-check .custom-check .check-mark {
 .welcome-page .welcome-btn {
   background-image: -webkit-gradient(linear, left top, right top, from(var(--main-color)), color-stop(var(--sec-color)), color-stop(var(--sec-color)), to(var(--main-color)));
   background-image: linear-gradient(to right, var(--main-color), var(--sec-color), var(--sec-color), var(--main-color));
-  background-size: 200%;
+  background-size: 150%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 100%;
@@ -5779,7 +5829,7 @@ html[dir='rtl'] .acc-input-cont .date::after {
 .acc-submit {
   background-image: -webkit-gradient(linear, left top, right top, from(var(--main-color)), color-stop(var(--sec-color)), color-stop(var(--sec-color)), to(var(--main-color)));
   background-image: linear-gradient(to right, var(--main-color), var(--sec-color), var(--sec-color), var(--main-color));
-  background-size: 200%;
+  background-size: 150%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: -webkit-max-content;
@@ -6979,6 +7029,9 @@ html[dir='rtl'] .social-link:last-of-type {
     font-size: 22px;
     color: #fff;
     font-weight: 500;
+  }
+  html[dir='rtl'] nav .nav-a {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */
