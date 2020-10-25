@@ -1868,6 +1868,9 @@ html[dir='rtl'] .sign-a {
     padding: 0;
     font-size: 15px;
   }
+  html[dir='rtl'] .sign-a {
+    padding: 0;
+  }
   .sign-a .text {
     display: none;
   }
@@ -7031,7 +7034,7 @@ html[dir='rtl'] .social-link:last-of-type {
     top: 0;
     bottom: 0;
     right: 0;
-    background: var(--sec-color);
+    background: var(--main-color);
     width: 50vw;
     z-index: -1;
     -webkit-transition: all .5s ease-in-out;
