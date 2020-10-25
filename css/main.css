@@ -5785,6 +5785,7 @@ html[dir='rtl'] .acc-input-cont .date::after {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  min-width: 180px;
   padding: 0 24px;
   font-size: 18px;
   color: #fff;
@@ -6547,6 +6548,137 @@ html[dir='rtl'] .users-table-cont .acc-table .Uname {
 .users-table-cont .acc-table .email {
   min-width: 240px;
   max-width: 242px;
+}
+
+.contact-page {
+  padding-bottom: 130px;
+}
+
+@media (max-width: 767px) {
+  .contact-page {
+    padding-bottom: 50px;
+  }
+}
+
+.contact-titel {
+  font-size: 48px;
+  color: var(--text-color);
+  line-height: 1.042;
+  font-weight: 900;
+  margin-bottom: 56px;
+}
+
+html[dir='rtl'] .contact-titel {
+  font-size: 35px;
+}
+
+@media (max-width: 767px) {
+  .contact-titel {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  html[dir='rtl'] .contact-titel {
+    font-size: 30px;
+  }
+  .contact-titel br {
+    display: none;
+  }
+}
+
+.offices {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 767px) {
+  .offices {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+.office .office-loc {
+  margin-bottom: 25px;
+}
+
+html[dir='rtl'] .office .office-loc {
+  font-size: 22px;
+}
+
+@media (max-width: 767px) {
+  .office .office-loc {
+    margin-bottom: 10px;
+  }
+  html[dir='rtl'] .office .office-loc {
+    font-size: 20px;
+  }
+}
+
+.office .office-contact {
+  font-size: 20px;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+html[dir='rtl'] .office .office-contact {
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  .office .office-contact {
+    font-size: 16px;
+  }
+  html[dir='rtl'] .office .office-contact {
+    font-size: 16px;
+  }
+}
+
+.office .office-contact a {
+  color: var(--text-color);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.office .office-contact a:hover, .office .office-contact a:focus {
+  color: var(--sec-color);
+}
+
+@media (max-width: 767px) {
+  .contact-form {
+    margin-top: 50px;
+  }
+}
+
+.contact-form .contact-grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 767px) {
+  .contact-form .contact-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.contact-form .acc-submit {
+  width: 148px;
+  height: 50px;
+  min-width: auto;
+}
+
+@media (max-width: 767px) {
+  .contact-form .acc-submit {
+    margin: 20px auto 0;
+  }
 }
 
 .footer {
