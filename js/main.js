@@ -382,6 +382,26 @@ $(document).ready(function () {
         $(".succes-modal .mo-modal").addClass("open");
         $("body").addClass("overflow");
     })
+    //////////////////////////////////////////////////////////////
+    $('.collapse.in').parent('div').addClass('active');
+
+    $('.collapse').on('show.bs.collapse', function () {
+        $(this).parent('div').addClass('active');
+        // $(".collapse").not(this).collapse('hide');
+
+    });
+
+    $('.collapse').on('hide.bs.collapse', function () {
+        $(this).parent('div').removeClass('active');
+    });
+    $('.tool.expand').click(function (e) {
+        $(".collapse").parent('div').addClass('active');
+        $(".collapse").collapse('show');
+    })
+    $('.tool.unexpand').click(function (e) {
+        $(".collapse").parent('div').removeClass('active');
+        $(".collapse").collapse('hide');
+    })
 });
 
 
