@@ -382,6 +382,16 @@ $(document).ready(function () {
         $(".succes-modal .mo-modal").addClass("open");
         $("body").addClass("overflow");
     })
+    $('.submit-order').click(function (e) {
+        e.preventDefault()
+        $(".overlay").fadeIn(300);
+        $(".order-modal").fadeOut(350);
+        $(".order-modal .mo-modal").removeClass("open");
+
+        $(".succes-modal").fadeIn(350);
+        $(".succes-modal .mo-modal").addClass("open");
+        $("body").addClass("overflow");
+    })
     //////////////////////////////////////////////////////////////
     $('.collapse.in').parent('div').addClass('active');
 
