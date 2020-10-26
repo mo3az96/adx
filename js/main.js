@@ -33,7 +33,9 @@ $(document).ready(function () {
         $("select:not(.sort-select)").addClass("mobile-select");
         $("select:not(.sort-select)").wrap('<div class="mobile-select-cont"></div>');
     }
-    $('.date input').datepicker({});
+    $('.date input').datepicker({
+        autoclose: true
+    });
 
     ///////// **nums** /////////
 
