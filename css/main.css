@@ -6998,11 +6998,16 @@ html[dir='rtl'] .faq .faq-body {
   border-radius: 20px;
   -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 105px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .orders-total {
     margin-top: 40px;
+    position: relative;
+    top: auto;
   }
 }
 
@@ -7184,9 +7189,20 @@ html[dir='rtl'] .agency-box .camp-name {
   }
 }
 
-.box-body {
-  max-width: 100%;
-  overflow-x: auto;
+@media (max-width: 991px) {
+  .box-body {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  .box-body::-webkit-scrollbar {
+    background-color: #fff;
+    width: 0px;
+    height: 7px;
+  }
+  .box-body::-webkit-scrollbar-thumb {
+    background: var(--sec-color);
+    border-radius: 3.5px;
+  }
 }
 
 .order-table {
